@@ -1,0 +1,145 @@
+body {
+    font-family: Arial, sans-serif;
+}
+footer {
+    background: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.attendance-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.day-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.day-name {
+    flex: 1;
+    font-weight: bold;
+}
+
+.day-checkbox {
+    margin-right: 10px;
+}
+
+.gift-icon {
+    color: #ff5722;
+    font-size: 24px;
+}
+
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+}
+
+.navbar-toggler-icon {
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: middle;
+    content: "";
+    background: no-repeat center center;
+    background-size: 100% 100%;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%288, 8, 8, 0.5%29' stroke-width='2' linecap='round' linejoin='round' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}.attendance-icon {
+    position: fixed;
+    bottom: 80px; /* Adjusted to avoid overlap with invite friends icon */
+    right: 20px;
+    background-color: #28a745;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.attendance-icon i {
+    font-size: 24px;
+}
+
+.language-switcher {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.language-switcher select {
+    width: auto;
+    display: inline-block;
+}
+.img-flag {
+    width: 20px;
+    height: auto;
+    margin-right: 10px;
+}
+.support-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #4CAF50;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 1000;
+}
+.support-icon i {
+    color: white;
+    font-size: 24px;
+}
+.chat-window {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    width: 300px;
+    height: 400px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    z-index: 1000;
+    resize: both; /* Allow resizing */
+    overflow: hidden; /* Hide overflow content */
+}
+.chat-window iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 10px;
+}
+.resize-handle {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #4CAF50;
+    bottom: 0;
+    right: 0;
+    cursor: se-resize;
+}
+#inviteFriends {
+    position: fixed;
+    bottom: 135px; /* Adjusted to avoid overlap with invite friends icon */
+    right: 20px;
+    background-color: #28a745;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 1000;
+}
+#inviteFriends i {
+    font-size: 24px;
+}
